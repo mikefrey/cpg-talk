@@ -108,7 +108,7 @@
  * Errors can be swallowed if you're not careful
 
 ### Swallowed Errors
- * Errors inside a `.then()` block
+ * Errors inside a `.then()` block - TEST THIS
 
 
 ## Compared to Callbacks
@@ -140,7 +140,7 @@
 ## Where they're used
 
  * koa + co
-
+ * AngularJS v2?
 
 ## Problems with generators
 
@@ -149,16 +149,28 @@
    * Chrome with --harmony flag
    * Node.js v0.11 (unstable) with --harmony flag
    * No IE
+ * Current implementations are immature - non-optimized
  * Designed for Iterators
  * Replacing callbacks or promises requires boilerplate
 
-### Support
- * http://facebook.github.io/regenerator/
- * https://github.com/google/traceur-compiler
+### Replacing callbacks and promises
+ * Some libraries help - co
+ *
 
+### Supporting ES5 browsers
+ * Transpilers
+   * Generators only - http://facebook.github.io/regenerator/
+   * Full ES6 support - https://github.com/google/traceur-compiler
+
+## Compared to Callbacks & Promises
+
+ * Easier to understand flow when using helpers like co
+ * Slower than callbacks
+ *
 
 
 # Conclusion
+
 
 
 # Thanks! / Questions
