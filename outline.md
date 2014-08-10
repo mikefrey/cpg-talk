@@ -33,13 +33,15 @@
 ## How callbacks work
  * Simple and Easy to understand
  * Pass a function that is called later
+ * EXAMPLE
  * Node convention is error first (err [, results...])
+ * EXAMPLE
 
 ## Simple visualization
 
 ## Where they're used
  * Node.js core
- * User-land libraries and modules
+ * Most user-land libraries and modules
  * XHR
  * PROMISES!
 
@@ -53,6 +55,7 @@
  * Callback hell - visualization
 
 ### Progression to callback-hell
+ *
 
 ### Releasing Zalgo
  * Callbacks should always be synchronous or asynchronous, never both
@@ -113,6 +116,7 @@
 
 ## Compared to Callbacks
 
+ * Bit more boilerplate
  * Better code organization
  * Complex situations are easier to understand
  * Slower than callbacks
@@ -154,8 +158,8 @@
  * Replacing callbacks or promises requires boilerplate
 
 ### Replacing callbacks and promises
- * Some libraries help - co
- *
+ * Boilerplate
+ * Some libraries help - co, task.js
 
 ### Supporting ES5 browsers
  * Transpilers

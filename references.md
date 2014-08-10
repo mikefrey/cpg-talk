@@ -9,6 +9,7 @@
  * https://github.com/kriskowal/q
  * https://github.com/tildeio/rsvp.js/
  * http://promise-nuggets.github.io/
+ * http://taskjs.org/
 
 ## Callbacks
 
@@ -31,6 +32,7 @@
  * http://facebook.github.io/regenerator/
  * https://github.com/google/traceur-compiler
  * https://github.com/visionmedia/co
+ * http://taskjs.org/
  * https://github.com/koajs/koa
  * http://kangax.github.io/compat-table/es6/
 

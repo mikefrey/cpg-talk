@@ -1,0 +1,22 @@
+{
+  "name": "cpg-talk",
+  "version": "0.0.0",
+  "description": "cpg-talk ========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikefrey/cpg-talk.git"
+  },
+  "author": "Mike Frey <frey.mike@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikefrey/cpg-talk/issues"
+  },
+  "homepage": "https://github.com/mikefrey/cpg-talk",
+  "dependencies": {
+    "bluebird": "~2.2.2"
+  }
+}
