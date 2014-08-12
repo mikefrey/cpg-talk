@@ -1,28 +1,26 @@
 var svc = require('./svc')
+var thunkify = require('thunkify')
+var co = require('co')
 
-var getTournament = svc.getTournament
-var getTeams = svc.getTeams
-var getGames = svc.getGames
+var getTournament = thunkify(svc.getTournament)
+var getTeams = thunkify(svc.getTeams)
+var getGames = thunkify(svc.getGames)
 
-function run(generator) {
-  function resume(err, value) {
-    if (err) { throw err }
-    itr.next(value)
-  }
-  var itr = generator(resume)
-  itr.next()
-}
+function* loadTourney(date) {
+  var tournament = yield getTournament(date)
+  var gTeams = getTeams(tournament.id)
+  var gGames = getGames(tournament.id)
 
-function* loadTourney(resume) {
-  var tournament = yield getTournament(Date.now(), resume)
-  var teams = yield getTeams(tournament.id, resume)
-  var games = yield getGames(tournament.id, resume)
+  var results = yield [gTeams, gGames]
 
-  console.dir({
+  return {
     tournament: tournament,
-    teams: teams,
-    games:games
-  })
+    teams: results[0],
+    games: results[1]
+  }
 }
 
-run(loadTourney)
+co(function* () {
+  var tourney = yield loadTourney(Date.now())
+  console.dir(tourney)
+})()

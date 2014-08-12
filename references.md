@@ -4,6 +4,8 @@
  * http://promisesaplus.com/
  * https://www.promisejs.org/
  * http://www.mattgreer.org/articles/promises-in-wicked-detail
+ * http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/
+ * http://raymondjulin.com/2014/05/10/writing-solid-asynchronous-code-using-promises/
  * http://spion.github.io/posts/why-i-am-switching-to-promises.html
  * https://github.com/petkaantonov/bluebird
  * https://github.com/kriskowal/q
@@ -15,7 +17,9 @@
 
  * http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony
  * http://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/
+ * https://www.joyent.com/developers/node/design/errors
  * https://github.com/caolan/async
+ * https://github.com/npm/dezalgo
 
 ## Streams
 

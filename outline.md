@@ -32,7 +32,7 @@
 
 ## How callbacks work
  * Simple and Easy to understand
- * Pass a function that is called later
+ * Pass a function that is called later after the work is complete
  * EXAMPLE
  * Node convention is error first (err [, results...])
  * EXAMPLE
@@ -50,6 +50,7 @@
 
  * You must always know ahead of time what you're going to do with the result
  * Success and Failure handled together
+ * Errors are handled in this weird special case as first argument
  * Code *feels* asynchronous
  * Releasing Zalgo
  * Callback hell - visualization
@@ -108,10 +109,6 @@
  * Can be confusing
  * No adopted single standard (yet)
    * Many incompatible implementations
- * Errors can be swallowed if you're not careful
-
-### Swallowed Errors
- * Errors inside a `.then()` block - TEST THIS
 
 
 ## Compared to Callbacks
@@ -144,7 +141,6 @@
 ## Where they're used
 
  * koa + co
- * AngularJS v2?
 
 ## Problems with generators
 
@@ -170,7 +166,28 @@
 
  * Easier to understand flow when using helpers like co
  * Slower than callbacks
- *
+
+
+
+# Exercise - Serial requests
+
+## Callbacks
+## Callbacks + Async
+## Promises
+## Generators
+
+
+# Exercise - Parallel requests
+
+## Callbacks
+## Callbacks + Async
+## Promises
+## Generators
+## Generators + thunkify
+## Generators + co
+
+
+
 
 
 # Conclusion
